@@ -1,8 +1,8 @@
 # Contributors (alphabetically)
 
-* **[madisonmay](https://github.com/madisonmay)**
+* **[gyohng](https://github.com/gyohng)**
 
-  Added Dockerfiles
+  Converted to run with TF2.x
 
 * **[Margaret Mitchell et al](https://arxiv.org/abs/1810.03993)**
 

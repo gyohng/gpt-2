@@ -11,13 +11,9 @@ Then, follow instructions for either native or Docker installation.
 
 All steps can optionally be done in a virtual environment using tools such as `virtualenv` or `conda`.
 
-Install tensorflow 1.12 (with GPU support, if you have a GPU and want everything to run faster)
+Install tensorflow 2.x (with GPU support, if you have a GPU and want everything to run faster)
 ```
-pip3 install tensorflow==1.12.0
-```
-or
-```
-pip3 install tensorflow-gpu==1.12.0
+pip3 install tensorflow
 ```
 
 Install other python packages:
@@ -32,22 +28,6 @@ python3 download_model.py 355M
 python3 download_model.py 774M
 python3 download_model.py 1558M
 ```
-
-## Docker Installation
-
-Build the Dockerfile and tag the created image as `gpt-2`:
-```
-docker build --tag gpt-2 -f Dockerfile.gpu . # or Dockerfile.cpu
-```
-
-Start an interactive bash session from the `gpt-2` docker image.
-
-You can opt to use the `--runtime=nvidia` flag if you have access to a NVIDIA GPU
-and a valid install of [nvidia-docker 2.0](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0)).
-```
-docker run --runtime=nvidia -it gpt-2 bash
-```
-
 # Running
 
 | WARNING: Samples are unfiltered and may contain offensive content. |
